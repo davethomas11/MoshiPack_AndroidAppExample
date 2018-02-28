@@ -1,7 +1,10 @@
 # MoshiPack_AndroidAppExample
 
+https://github.com/davethomas11/MoshiPack
+
 This is an example implementation of using moshipack-retrofit.
 There is a node server at https://fierce-fortress-58676.herokuapp.com/ which is serving up MessagePack.
+Sever source code: https://github.com/davethomas11/MoshiPack_TestNodeServer
 
 This app downloads the MessagePack from the endpoint /cats and displays a list of cats.
 

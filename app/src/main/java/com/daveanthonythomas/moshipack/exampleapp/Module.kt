@@ -20,7 +20,7 @@ object AppModule {
     val module: Module = applicationContext {
         provide {
             Retrofit.Builder()
-                    .addConverterFactory(MoshiPackConverterFactory(MoshiPack()))
+                    .addConverterFactory(MoshiPackConverterFactory())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .baseUrl(BuildConfig.SERVER_URL)
                     .build()

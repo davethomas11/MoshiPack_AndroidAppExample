@@ -29,7 +29,7 @@ android {
     }
 }
 
-def moshipack_commit = "4c69492"
+def moshipack_ver = "1.0.0-beta"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -48,8 +48,8 @@ dependencies {
     kapt "android.arch.persistence.room:compiler:1.0.0"
     kapt "android.arch.lifecycle:compiler:1.1.0"
 
-    implementation "com.github.davethomas11.MoshiPack:moshipack:$moshipack_commit"
-    implementation "com.github.davethomas11.MoshiPack:moshipack-retrofit:$moshipack_commit"
+    implementation "com.daveanthonythomas.moshipack:moshipack:$moshipack_ver"
+    implementation "com.daveanthonythomas.moshipack:moshipack-retrofit:$moshipack_ver"
 
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
